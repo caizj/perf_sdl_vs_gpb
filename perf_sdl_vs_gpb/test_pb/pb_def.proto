@@ -1,0 +1,183 @@
+syntax = "proto3";
+
+message IntStruct
+{
+	sint32 i0=1;
+	sint32 i1=2;
+	sint32 i2=3;
+	sint32 i3=4;
+	sint32 i4=5;
+	sint32 i5=6;
+	sint32 i6=7;
+	sint32 i7=8;
+	sint32 i8=9;
+	sint32 i9=10;
+	sint32 i10=11;
+	sint32 i11=12;
+	sint32 i12=13;
+	sint32 i13=14;
+	sint32 i14=15;
+	sint32 i15=16;
+	sint32 i16=17;
+	sint32 i17=18;
+	sint32 i18=19;
+	sint32 i19=20;
+	sint32 i20=21;
+	sint32 i21=22;
+	sint32 i22=23;
+	sint32 i23=24;
+	sint32 i24=25;
+	sint32 i25=26;
+	sint32 i26=27;
+	sint32 i27=28;
+	sint32 i28=29;
+	sint32 i29=30;
+	sint32 i30=31;
+	sint32 i31=32;
+	
+	sint64 l0=33;
+	sint64 l1=34;
+	sint64 l2=35;
+	sint64 l3=36;
+	sint64 l4=37;
+	sint64 l5=38;
+	sint64 l6=39;
+	sint64 l7=40;
+	sint64 l8=41;
+	sint64 l9=42;
+	sint64 l10=43;
+	sint64 l11=44;
+	sint64 l12=45;
+	sint64 l13=46;
+	sint64 l14=47;
+	sint64 l15=48;
+	sint64 l16=49;
+	sint64 l17=50;
+	sint64 l18=51;
+	sint64 l19=52;
+	sint64 l20=53;
+	sint64 l21=54;
+	sint64 l22=55;
+	sint64 l23=56;
+	sint64 l24=57;
+	sint64 l25=58;
+	sint64 l26=59;
+	sint64 l27=60;
+	sint64 l28=61;
+	sint64 l29=62;
+	sint64 l30=63;
+	sint64 l31=64;
+	sint64 l32=65;
+	sint64 l33=66;
+	sint64 l34=67;
+	sint64 l35=68;
+	sint64 l36=69;
+	sint64 l37=70;
+	sint64 l38=71;
+	sint64 l39=72;
+	sint64 l40=73;
+	sint64 l41=74;
+	sint64 l42=75;
+	sint64 l43=76;
+	sint64 l44=77;
+	sint64 l45=78;
+	sint64 l46=79;
+	sint64 l47=80;
+	sint64 l48=81;
+	sint64 l49=82;
+	sint64 l50=83;
+	sint64 l51=84;
+	sint64 l52=85;
+	sint64 l53=86;
+	sint64 l54=87;
+	sint64 l55=88;
+	sint64 l56=89;
+	sint64 l57=90;
+	sint64 l58=91;
+	sint64 l59=92;
+	sint64 l60=93;
+	sint64 l61=94;
+	sint64 l62=95;
+	sint64 l63=96;
+
+}
+
+message StringStruct
+{
+	string str1=1;
+	string str2=2;
+}
+
+message ListStruct
+{
+	repeated string lstStr=1;
+	repeated sint32 lstInt=2;
+	repeated sint64 lstLong=3;
+}
+
+message MapStruct
+{
+	map<string,string> mapStr2Str=1;
+	map<string,sint32> mapStr2Int=2;
+	map<sint32,string> mapInt2Str=3;
+	map<sint32,sint32> mapInt2Int=4;
+}
+
+message MapListStruct
+{
+	message ListIntValue
+	{
+		repeated sint32 v=1;
+	}
+	message ListStrValue
+	{
+		repeated string v=1;
+	}	
+	
+	map<sint32, ListIntValue> mili=1;
+	map<string, ListStrValue> msls=2;
+}
+
+message MapMapStruct
+{
+	message MapIntValue
+	{
+		map<sint32,sint32> v=1;
+	}
+	message MapStrValue
+	{
+		map<string,string> v=1;
+	}
+	map<sint32, MapIntValue> mimii=1;
+	map<string, MapStrValue> msmss=2;
+
+}
+
+message ListMapStruct
+{
+	message MapIntValue
+        {
+                map<sint32,sint32> v=1;
+        }
+        message MapStrValue
+        {
+                map<string,string> v=1;
+        }
+	repeated MapIntValue lmi=1;
+	repeated MapStrValue lms=2;
+}
+
+message ListListStruct
+{
+	message ListIntValue
+	{
+		repeated sint32 v=1;
+	}
+	message ListStrValue
+	{
+		repeated string v=1;
+	}	
+	repeated ListIntValue li=1;
+	repeated ListStrValue ls=2;
+}
+

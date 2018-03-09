@@ -1,0 +1,162 @@
+module MBenchmark
+{
+	struct SIntStruct
+	{
+		int32 i0;
+		int32 i1;
+		int32 i2;
+		int32 i3;
+		int32 i4;
+		int32 i5;
+		int32 i6;
+		int32 i7;
+		int32 i8;
+		int32 i9;
+		int32 i10;
+		int32 i11;
+		int32 i12;
+		int32 i13;
+		int32 i14;
+		int32 i15;
+		int32 i16;
+		int32 i17;
+		int32 i18;
+		int32 i19;
+		int32 i20;
+		int32 i21;
+		int32 i22;
+		int32 i23;
+		int32 i24;
+		int32 i25;
+		int32 i26;
+		int32 i27;
+		int32 i28;
+		int32 i29;
+		int32 i30;
+		int32 i31;
+		
+		int64 l0;
+		int64 l1;
+		int64 l2;
+		int64 l3;
+		int64 l4;
+		int64 l5;
+		int64 l6;
+		int64 l7;
+		int64 l8;
+		int64 l9;
+		int64 l10;
+		int64 l11;
+		int64 l12;
+		int64 l13;
+		int64 l14;
+		int64 l15;
+		int64 l16;
+		int64 l17;
+		int64 l18;
+		int64 l19;
+		int64 l20;
+		int64 l21;
+		int64 l22;
+		int64 l23;
+		int64 l24;
+		int64 l25;
+		int64 l26;
+		int64 l27;
+		int64 l28;
+		int64 l29;
+		int64 l30;
+		int64 l31;
+		int64 l32;
+		int64 l33;
+		int64 l34;
+		int64 l35;
+		int64 l36;
+		int64 l37;
+		int64 l38;
+		int64 l39;
+		int64 l40;
+		int64 l41;
+		int64 l42;
+		int64 l43;
+		int64 l44;
+		int64 l45;
+		int64 l46;
+		int64 l47;
+		int64 l48;
+		int64 l49;
+		int64 l50;
+		int64 l51;
+		int64 l52;
+		int64 l53;
+		int64 l54;
+		int64 l55;
+		int64 l56;
+		int64 l57;
+		int64 l58;
+		int64 l59;
+		int64 l60;
+		int64 l61;
+		int64 l62;
+		int64 l63;
+
+	};
+	struct SStringStr
+	{
+		string str1;
+		string str2;
+	};
+
+	list vector<int32> IntList;
+	list vector<int64> LongList;
+	list vector<string> StrList;
+	struct SListStruct
+	{
+		IntList il;
+		LongList ll;
+		StrList sl;
+	};
+	map aimap<string,string> Str2StrMap;
+	map aimap<string,int32> Str2IntMap;
+	map aimap<int32,int32> Int2IntMap;
+	map aimap<int32,string> Int2StrMap;
+	struct SMapStruct
+	{
+		Str2StrMap mss;
+		Str2IntMap msi;
+		Int2IntMap mii;
+		Int2StrMap mis;
+	};
+
+	map aimap<int32,IntList> Int2IntListMap;
+	map aimap<string,StrList> Str2StrListMap;
+
+	map aimap<int32,Int2IntMap> Int2IntMapMap;
+	map aimap<string,Str2StrMap> Str2StrMapMap;
+	struct SMapListStruct
+	{
+		Int2IntListMap mili;
+		Str2StrListMap msls;
+	};
+	struct SMapMapStruct
+	{
+		Int2IntMapMap mimii;
+		Str2StrMapMap msmss;
+	};
+
+	list vector<IntList> IntListList;
+	list vector<StrList> StrListList;
+	list vector<Int2IntMap> Int2IntMapList;
+	list vector<Str2StrMap> Str2StrMapList;
+	struct SListListStruct
+	{
+		IntListList lli;
+		StrListList lls;
+	};
+	struct SListMapStruct
+	{
+		Int2IntMapList lmii;
+		Str2StrMapList lmss;
+	};
+};
+
